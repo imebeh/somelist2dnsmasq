@@ -23,5 +23,6 @@ convert gfwlist and a ad block list to dnsmasq's config file
 
 4. Thanks to: 
 
-   1. https://github.com/cokebar/gfwlist2dnsmasq
-   2. http://www.miui.com/thread-1877166-1-1.html
+   (1). https://github.com/cokebar/gfwlist2dnsmasq
+
+   (2). http://www.miui.com/thread-1877166-1-1.html

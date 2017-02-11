@@ -16,7 +16,7 @@ convert gfwlist and a ad block list to dnsmasq's config file
    ├── whitelist.conf       // dnsmasq config file, domains will be directed to their server
    └── blocklist.conf       // dnsmasq config file, DNS request will be redirected to 127.0.0.1:2 by default```
 
-`gfwlist's` priority is higher than `whitelist's`
+   `gfwlist's` priority is higher than `whitelist's`
 
 
 3. see also: https://github.com/shadowsocks/luci-app-shadowsocks/wiki/GfwList-Support

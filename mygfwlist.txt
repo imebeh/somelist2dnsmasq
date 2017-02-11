@@ -1,0 +1,8 @@
+@@dl.google.com
+@@qq.com
+@@v2ex.com
+@@www.v2ex.com
+github-windows.s3.amazonaws.com
+
+#tg
+91.108.56.0/22

@@ -17,8 +17,7 @@ whitelist_dnsip = '114.114.114.114'
 whitelist_dnsport = '53'
 whitelist_ipset = 'ss_spec_dst_bp'
 # blocklist
-blocklist_dnsip = gfwlist_dnsip
-blocklist_dnsport = '2'
+blocklist_responseip = '127.0.0.1'
 
 gfwlist_url = 'https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt'
 mygfwlist_url = './mygfwlist.txt'
@@ -55,7 +54,6 @@ server=/domain.com/$whitelist_dnsip#$whitelist_dnsport
 ipset=/domain.com/$whitelist_ipset
 
 blocklist_output
-server=/domain.com/$blocklist_dnsip#$blocklist_dnsport
 """
 
 gfwip = set()
@@ -225,8 +223,8 @@ def save_whitelist(e):
         e, whitelist_dnsip, whitelist_dnsport, whitelist_ipset)
 
 def save_blocklist(e):
-    return 'server=/{0}/{1}#{2}\n'.format(
-        e, blocklist_dnsip, blocklist_dnsport)
+    return 'address=/{0}/{1}\n'.format(
+        e, blocklist_responseip)
 
 
 #save to file

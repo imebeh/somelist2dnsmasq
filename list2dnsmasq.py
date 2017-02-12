@@ -54,6 +54,7 @@ server=/domain.com/$whitelist_dnsip#$whitelist_dnsport
 ipset=/domain.com/$whitelist_ipset
 
 blocklist_output
+address=/domain.com/$blocklist_responseip
 """
 
 gfwip = set()
